@@ -9,54 +9,47 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText num1, num2;
-    Button suma, resta, mult, div;
+    EditText nombre, apellido,género,edad,dirección,telefono;
+    Button mostrar;
     TextView resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        num1 = (EditText) findViewById(R.id.num1);
-        num2 = (EditText) findViewById(R.id.num2);
 
-        suma= (Button) findViewById(R.id.sumar);
-        resta= (Button) findViewById(R.id.restar);
-        mult= (Button) findViewById(R.id.mul);
-        div=(Button) findViewById(R.id.div);
+        nombre=(EditText) findViewById(R.id.Nombre);
+        apellido=(EditText) findViewById(R.id.Apellido);
+        género=(EditText) findViewById(R.id.Género);
+        edad=(EditText) findViewById(R.id.Edad);
+        dirección=(EditText) findViewById(R.id.Dirección);
+        telefono=(EditText) findViewById(R.id.Telefono);
+
+        mostrar= (Button) findViewById(R.id.Mostrar);
 
         resultado=findViewById(R.id.resultado);
+        mostrar.setOnClickListener(this);
 
-
-        suma.setOnClickListener(this);
-        resta.setOnClickListener(this);
-        mult. setOnClickListener(this);
-        div.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        String n1 = num1.getText().toString();
-        String n2 = num2.getText().toString();
+        public void onClick(View v) {
+            nombre = nombre.getText().toString();
+            apellido = apellido.getText().toString();
+            género = género.getText().toString();
+            edad = edad.getText().toString();
+            dirección = dirección.getText().toString();
 
-        int entero1=Integer.parseInt(n1);
-        int entero2=Integer.parseInt(n2);
-        int rta=0;
+
+            int rta=0;
 
         switch (v.getId()){
-            case R.id.sumar:
-                rta=entero1+entero2;
+            case R.id.Mostrar:
+                resultado= +nombre+apellido,género,edad,dirección,telefono;
                 break;
-            case R.id.restar:
-                rta=entero1-entero2;
-                break;
-            case R.id.mul:
-                rta=entero1*entero2;
-                break;
-            case R.id.div:
-                rta= entero1/entero2;
-                break;
+
 
 
         }
