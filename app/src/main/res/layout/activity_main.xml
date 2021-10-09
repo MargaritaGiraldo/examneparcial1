@@ -14,56 +14,60 @@
     tools:context="com.example.calculadora.MainActivity">
 
     <EditText
-        android:id="@+id/num1"
+        android:id="@+id/Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="numero 1"
+        android:hint="nombre"
         />
 
     <EditText
-        android:id="@+id/num2"
+        android:id="@+id/Apellido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="numero 2"
+        android:hint="apellido"
+        />
+    <EditText
+        android:id="@+id/Género"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="género"
         />
 
+    <EditText
+        android:id="@+id/Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="edad"
+        />
+    <EditText
+        android:id="@+id/Dirección"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="dirección"
+        />
+
+    <EditText
+        android:id="@+id/Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="telefono"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <Button
-            android:id="@+id/sumar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Suma"
-            android:textSize="15sp"
-
-            />
-
-        <Button
-            android:id="@+id/restar"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Resta"
-            android:textSize="15sp"
-
-            />
-
-        <Button
-            android:id="@+id/mul"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Mul"
-            android:textSize="15sp"
-
-            />
-        <Button
-            android:id="@+id/div"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:text="Div"
+            android:id="@+id/Mostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mostrar"
             android:textSize="15sp"
 
             />
